@@ -1,0 +1,95 @@
+\documentclass{article}
+\usepackage{amsmath, amsthm, amsfonts, amssymb, geometry, natbib}
+
+% Set margin to 2.5cm on all sides
+\geometry{margin=2.5cm}
+
+\title{Exercise Set}
+\author{Walid Alwahabi}
+\date{April 24, 2024}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\section{Introduction}
+This exercise will focus on the different ways you use Latex 
+
+\subsection{Formatting Text}
+In this section, we demonstrate formatting text using bold and italic styles:
+\begin{itemize}
+    \item \textbf{Bold text}
+    \item \textit{Italic text}
+\end{itemize}
+
+\section{Mathematical Notation}
+Here is an example equation using the equation environment:
+\begin{equation*}
+    E = mc^2
+\end{equation*}
+
+\section{BibTeX}
+    \citep{mason_2006_elearning}
+    \bibliographystyle{agsm}
+    \bibliography{references}
+\section{Table Example}
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        Row 1, Col 1 & Row 1, Col 2 \\
+        \hline
+        Row 2, Col 1 & Row 2, Col 2 \\
+        \hline
+    \end{tabular}
+    \caption{Example Table}
+\end{table}
+
+\section{Font families}
+\text{Serif font family:} This text is in serif font.
+\textsf{Sans-serif font family:} This text is in sans-serif font.
+
+\texttt{Mono-spaced font family:} This text is in mono-spaced font.
+
+\section{Rulers}
+\noindent\rule{\textwidth}{0.5pt}
+
+\section{Spaces}
+\subsection{Horizontal Spaces}
+This is some text.\hspace{2cm}This is text with extra horizontal space.
+
+\subsection{Vertical Spaces}
+This is some text.
+
+\vspace{1cm}
+
+This is text with extra vertical space.
+
+\section{Theorems and Proofs}
+\subsection{Pythagorean Theorem}
+\newtheorem{theorem}{Pythagorean Theorem}
+\begin{theorem}
+Given a right-angle triangle with hypotenuse of length $c$ and side lengths $a$ and $b$, we have:
+    \begin{equation}
+        c^2 = a^2 + b^2
+    \end{equation}
+\end{theorem}
+
+\begin{proof}
+Now we start with four copies of the same triangle. Three of these have been rotated 90°, 180°, and 270°, respectively. Each has area $\frac{ab}{2}$. Let's put them together without additional rotations so that they form a square with side $(a + b)$ and a square hole with side $c$.
+
+\begin{equation}
+    (a + b)^2 = 4 \frac{ab}{2} + c^2
+\end{equation}
+\begin{equation}
+    a^2 + 2ab + b^2 = 2ab + c^2
+\end{equation}
+\begin{equation}
+    a^2 + b^2 = + c^2
+\end{equation}
+
+\end{proof}
+
+\end{document}
